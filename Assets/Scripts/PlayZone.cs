@@ -149,7 +149,7 @@ public class PlayZone : MonoBehaviour
 
     void SuccessfulSequence()
     {
-        Debug.Log("Successful");
+        FindObjectOfType<UI_Controller>().ShowSuccessfulPopup();
     }
 
     void Move(int x, int y)
