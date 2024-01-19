@@ -34,6 +34,7 @@ public class GameController : MonoBehaviour
         }
         
         FindObjectOfType<UI_Controller>().GoToGameScreen();
+        FindObjectOfType<UI_Controller>().InitializeGameScreen(mode, story);
     }
 
     void ShowError(String error)
